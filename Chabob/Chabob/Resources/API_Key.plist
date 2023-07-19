@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NMap_API_Key</key>
-	<string>key</string>
+	<string>api_key</string>
 </dict>
 </plist>
