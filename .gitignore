@@ -91,6 +91,6 @@ fastlane/test_output
 
 .DS_Store
 
-.API_Key
+/Resources/API_Key.plist
 
 iOSInjectionProject/
