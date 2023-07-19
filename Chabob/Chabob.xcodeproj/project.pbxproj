@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21B92D62A67B9CC003BF71E /* API_Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21B92D52A67B9CC003BF71E /* API_Key.plist */; };
 		E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA51C2A49D8A100625565 /* ChabobApp.swift */; };
 		E21DA51F2A49D8A100625565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA51E2A49D8A100625565 /* ContentView.swift */; };
 		E21DA5212A49D8A200625565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21DA5202A49D8A200625565 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21B92D52A67B9CC003BF71E /* API_Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = API_Key.plist; sourceTree = "<group>"; };
 		E21DA5192A49D8A100625565 /* Chabob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chabob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA51C2A49D8A100625565 /* ChabobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobApp.swift; sourceTree = "<group>"; };
 		E21DA51E2A49D8A100625565 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		E21DA5472A49D9E800625565 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E21B92D52A67B9CC003BF71E /* API_Key.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21DA5242A49D8A200625565 /* Preview Assets.xcassets in Resources */,
+				E21B92D62A67B9CC003BF71E /* API_Key.plist in Resources */,
 				E21DA5212A49D8A200625565 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
