@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import NMapsMap
 
 @main
 struct ChabobApp: App {
+	
+	init() {
+		NMFAuthManager.shared().clientId = Bundle.main.apiKey
+	}
+	
     var body: some Scene {
         WindowGroup {
             ContentView()

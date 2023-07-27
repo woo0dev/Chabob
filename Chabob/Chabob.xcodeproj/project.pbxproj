@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DEA8E7D0F819DF649BE5517 /* Pods_Chabob_ChabobUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93840EA9B4B076BD207A378D /* Pods_Chabob_ChabobUITests.framework */; };
+		72B8C3131F607FBEDB15C102 /* Pods_ChabobTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A820B9BEAC6FF10C078C1878 /* Pods_ChabobTests.framework */; };
+		A7C0846CB663E4A4FA972DFB /* Pods_Chabob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A724DD1FCCF224401039B29 /* Pods_Chabob.framework */; };
 		E21B92D62A67B9CC003BF71E /* API_Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21B92D52A67B9CC003BF71E /* API_Key.plist */; };
 		E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA51C2A49D8A100625565 /* ChabobApp.swift */; };
 		E21DA51F2A49D8A100625565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA51E2A49D8A100625565 /* ContentView.swift */; };
@@ -15,6 +18,8 @@
 		E21DA52E2A49D8A200625565 /* ChabobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA52D2A49D8A200625565 /* ChabobTests.swift */; };
 		E21DA5382A49D8A200625565 /* ChabobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5372A49D8A200625565 /* ChabobUITests.swift */; };
 		E21DA53A2A49D8A200625565 /* ChabobUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5392A49D8A200625565 /* ChabobUITestsLaunchTests.swift */; };
+		E254437E2A71383D006AF892 /* Chabob++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254437D2A71383D006AF892 /* Chabob++Bundle.swift */; };
+		E295BF5D2A67E9EB002791D3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295BF5C2A67E9EB002791D3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09561DBA7EE1F7031B1C8AC7 /* Pods-Chabob-ChabobUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chabob-ChabobUITests.debug.xcconfig"; path = "Target Support Files/Pods-Chabob-ChabobUITests/Pods-Chabob-ChabobUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17636ECC0ED5A2ADA7EC479A /* Pods-ChabobTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChabobTests.debug.xcconfig"; path = "Target Support Files/Pods-ChabobTests/Pods-ChabobTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32673FF272231CA981D4CAF3 /* Pods-Chabob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chabob.debug.xcconfig"; path = "Target Support Files/Pods-Chabob/Pods-Chabob.debug.xcconfig"; sourceTree = "<group>"; };
+		5A724DD1FCCF224401039B29 /* Pods_Chabob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chabob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93840EA9B4B076BD207A378D /* Pods_Chabob_ChabobUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chabob_ChabobUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98982953C43EB55DFCA5E534 /* Pods-Chabob-ChabobUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chabob-ChabobUITests.release.xcconfig"; path = "Target Support Files/Pods-Chabob-ChabobUITests/Pods-Chabob-ChabobUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B4ACE63C7F99EAEB445AA55 /* Pods-Chabob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chabob.release.xcconfig"; path = "Target Support Files/Pods-Chabob/Pods-Chabob.release.xcconfig"; sourceTree = "<group>"; };
+		A820B9BEAC6FF10C078C1878 /* Pods_ChabobTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChabobTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C29FEEA2CA867360998ED7 /* Pods-ChabobTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChabobTests.release.xcconfig"; path = "Target Support Files/Pods-ChabobTests/Pods-ChabobTests.release.xcconfig"; sourceTree = "<group>"; };
 		E21B92D52A67B9CC003BF71E /* API_Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = API_Key.plist; sourceTree = "<group>"; };
 		E21DA5192A49D8A100625565 /* Chabob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chabob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA51C2A49D8A100625565 /* ChabobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobApp.swift; sourceTree = "<group>"; };
@@ -46,6 +60,8 @@
 		E21DA5332A49D8A200625565 /* ChabobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChabobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA5372A49D8A200625565 /* ChabobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobUITests.swift; sourceTree = "<group>"; };
 		E21DA5392A49D8A200625565 /* ChabobUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E254437D2A71383D006AF892 /* Chabob++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chabob++Bundle.swift"; sourceTree = "<group>"; };
+		E295BF5C2A67E9EB002791D3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C0846CB663E4A4FA972DFB /* Pods_Chabob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B8C3131F607FBEDB15C102 /* Pods_ChabobTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +85,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEA8E7D0F819DF649BE5517 /* Pods_Chabob_ChabobUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33FE2BAC9AC803806F0BD060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A724DD1FCCF224401039B29 /* Pods_Chabob.framework */,
+				93840EA9B4B076BD207A378D /* Pods_Chabob_ChabobUITests.framework */,
+				A820B9BEAC6FF10C078C1878 /* Pods_ChabobTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E21DA5102A49D8A100625565 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +109,8 @@
 				E21DA52C2A49D8A200625565 /* ChabobTests */,
 				E21DA5362A49D8A200625565 /* ChabobUITests */,
 				E21DA51A2A49D8A100625565 /* Products */,
+				F3B4C7F8207BEA666E8C5020 /* Pods */,
+				33FE2BAC9AC803806F0BD060 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				E21B92D52A67B9CC003BF71E /* API_Key.plist */,
+				E254437D2A71383D006AF892 /* Chabob++Bundle.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E21DA51E2A49D8A100625565 /* ContentView.swift */,
+				E295BF5C2A67E9EB002791D3 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +203,19 @@
 			path = Intent;
 			sourceTree = "<group>";
 		};
+		F3B4C7F8207BEA666E8C5020 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32673FF272231CA981D4CAF3 /* Pods-Chabob.debug.xcconfig */,
+				9B4ACE63C7F99EAEB445AA55 /* Pods-Chabob.release.xcconfig */,
+				09561DBA7EE1F7031B1C8AC7 /* Pods-Chabob-ChabobUITests.debug.xcconfig */,
+				98982953C43EB55DFCA5E534 /* Pods-Chabob-ChabobUITests.release.xcconfig */,
+				17636ECC0ED5A2ADA7EC479A /* Pods-ChabobTests.debug.xcconfig */,
+				C2C29FEEA2CA867360998ED7 /* Pods-ChabobTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21DA53D2A49D8A200625565 /* Build configuration list for PBXNativeTarget "Chabob" */;
 			buildPhases = (
+				CB1AA8D48FC132CE8F1F6293 /* [CP] Check Pods Manifest.lock */,
 				E21DA5152A49D8A100625565 /* Sources */,
 				E21DA5162A49D8A100625565 /* Frameworks */,
 				E21DA5172A49D8A100625565 /* Resources */,
+				8C9B2F8E26550421844A317E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21DA5402A49D8A200625565 /* Build configuration list for PBXNativeTarget "ChabobTests" */;
 			buildPhases = (
+				3846CAAF33005CE568A47E2B /* [CP] Check Pods Manifest.lock */,
 				E21DA5252A49D8A200625565 /* Sources */,
 				E21DA5262A49D8A200625565 /* Frameworks */,
 				E21DA5272A49D8A200625565 /* Resources */,
@@ -212,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21DA5432A49D8A200625565 /* Build configuration list for PBXNativeTarget "ChabobUITests" */;
 			buildPhases = (
+				F2B2B2750634B5124F701570 /* [CP] Check Pods Manifest.lock */,
 				E21DA52F2A49D8A200625565 /* Sources */,
 				E21DA5302A49D8A200625565 /* Frameworks */,
 				E21DA5312A49D8A200625565 /* Resources */,
+				2DA5614F261EE08391E155BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,7 +301,7 @@
 				};
 			};
 			buildConfigurationList = E21DA5142A49D8A100625565 /* Build configuration list for PBXProject "Chabob" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -296,12 +347,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DA5614F261EE08391E155BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chabob-ChabobUITests/Pods-Chabob-ChabobUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chabob-ChabobUITests/Pods-Chabob-ChabobUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chabob-ChabobUITests/Pods-Chabob-ChabobUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3846CAAF33005CE568A47E2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChabobTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C9B2F8E26550421844A317E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chabob/Pods-Chabob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chabob/Pods-Chabob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chabob/Pods-Chabob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1AA8D48FC132CE8F1F6293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chabob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B2B2750634B5124F701570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chabob-ChabobUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E21DA5152A49D8A100625565 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E21DA51F2A49D8A100625565 /* ContentView.swift in Sources */,
+				E254437E2A71383D006AF892 /* Chabob++Bundle.swift in Sources */,
+				E295BF5D2A67E9EB002791D3 /* MapView.swift in Sources */,
 				E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +611,7 @@
 		};
 		E21DA53E2A49D8A200625565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32673FF272231CA981D4CAF3 /* Pods-Chabob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +621,7 @@
 				DEVELOPMENT_TEAM = SXSNK823Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -484,6 +642,7 @@
 		};
 		E21DA53F2A49D8A200625565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B4ACE63C7F99EAEB445AA55 /* Pods-Chabob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +652,7 @@
 				DEVELOPMENT_TEAM = SXSNK823Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -513,6 +673,7 @@
 		};
 		E21DA5412A49D8A200625565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17636ECC0ED5A2ADA7EC479A /* Pods-ChabobTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +694,7 @@
 		};
 		E21DA5422A49D8A200625565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C29FEEA2CA867360998ED7 /* Pods-ChabobTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +715,7 @@
 		};
 		E21DA5442A49D8A200625565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09561DBA7EE1F7031B1C8AC7 /* Pods-Chabob-ChabobUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +734,7 @@
 		};
 		E21DA5452A49D8A200625565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98982953C43EB55DFCA5E534 /* Pods-Chabob-ChabobUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
