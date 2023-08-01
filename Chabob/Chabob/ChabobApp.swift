@@ -17,7 +17,7 @@ struct ChabobApp: App {
 	
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			MainChargingStationView.build()
         }
     }
 }
