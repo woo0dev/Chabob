@@ -8,10 +8,12 @@
 import SwiftUI
 import Combine
 
-class ChargingStationModel: ObservableObject, ChargingStationModelProtocol {
-	@Published var chargingStations: [ChargingStation] = [ChargingStation]()
+final class ChargingStationModel: ObservableObject, ChargingStationModelProtocol {
+	@Published var locationManager = LocationService()
+	@Published var contentState: ChargingStationType.Model.ContentState = .loading
 	
-	func fetchChargingStationData(url: URL) {
+	func fetchChargingStationData(url: URL, completion: @escaping (Result<[ChargingStation], ChargingStationError>) -> Void) {
+		var chargingStations = [ChargingStation]()
 		let urlRequest = URLRequest(url: url)
 		let dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
 			if let error = error {
@@ -26,14 +28,41 @@ class ChargingStationModel: ObservableObject, ChargingStationModelProtocol {
 				DispatchQueue.main.async {
 					do {
 						let decodeResponse = try JSONDecoder().decode(ChargingStationResponse.self, from: data)
-						self.chargingStations = decodeResponse.data
+						chargingStations = decodeResponse.data
 					} catch let error {
 						print("Error: Decoding: ", error)
+					}
+					if chargingStations.isEmpty {
+						completion(.failure(.emptyData))
+					} else {
+						completion(.success(chargingStations))
 					}
 				}
 			}
 		}
 		
 		dataTask.resume()
+	}
+}
+
+extension ChargingStationModel {
+	func dataFetchLoading() {
+		contentState = .loading
+	}
+	
+	func dataUpdate(contents: [ChargingStation]) {
+		contentState = .content(contents: contents)
+	}
+	
+	func dataFetchError(_ error: Error) {
+		contentState = .error(text: "Fail")
+	}
+}
+
+extension ChargingStationType.Model {
+	enum ContentState {
+		case loading
+		case content(contents: [ChargingStation])
+		case error(text: String)
 	}
 }

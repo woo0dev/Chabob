@@ -13,7 +13,6 @@
 		E21B92D62A67B9CC003BF71E /* API_Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = E21B92D52A67B9CC003BF71E /* API_Key.plist */; };
 		E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA51C2A49D8A100625565 /* ChabobApp.swift */; };
 		E21DA51F2A49D8A100625565 /* MainChargingStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA51E2A49D8A100625565 /* MainChargingStationView.swift */; };
-		E21DA5212A49D8A200625565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21DA5202A49D8A200625565 /* Assets.xcassets */; };
 		E21DA5242A49D8A200625565 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21DA5232A49D8A200625565 /* Preview Assets.xcassets */; };
 		E21DA52E2A49D8A200625565 /* ChabobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA52D2A49D8A200625565 /* ChabobTests.swift */; };
 		E21DA5382A49D8A200625565 /* ChabobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5372A49D8A200625565 /* ChabobUITests.swift */; };
@@ -25,6 +24,9 @@
 		E2B752552A79491000ACF477 /* ChargingStationIntentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B752542A79491000ACF477 /* ChargingStationIntentProtocol.swift */; };
 		E2B752572A79522A00ACF477 /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B752562A79522A00ACF477 /* ChargingStation.swift */; };
 		E2B7525A2A795E0E00ACF477 /* MainChargingStationView+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B752592A795E0E00ACF477 /* MainChargingStationView+Build.swift */; };
+		E2B7525D2A7B7D5300ACF477 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7525C2A7B7D5300ACF477 /* LocationService.swift */; };
+		E2B7525F2A7B9DCB00ACF477 /* ChargingStationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7525E2A7B9DCB00ACF477 /* ChargingStationType.swift */; };
+		E2B752612A8146B900ACF477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B752602A8146B900ACF477 /* Assets.xcassets */; };
 		E2C74C242A72A7680043E8EC /* ChargingStationModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */; };
 		E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */; };
 /* End PBXBuildFile section */
@@ -60,7 +62,6 @@
 		E21DA5192A49D8A100625565 /* Chabob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chabob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA51C2A49D8A100625565 /* ChabobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobApp.swift; sourceTree = "<group>"; };
 		E21DA51E2A49D8A100625565 /* MainChargingStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChargingStationView.swift; sourceTree = "<group>"; };
-		E21DA5202A49D8A200625565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21DA5232A49D8A200625565 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E21DA5292A49D8A200625565 /* ChabobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChabobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA52D2A49D8A200625565 /* ChabobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobTests.swift; sourceTree = "<group>"; };
@@ -74,6 +75,9 @@
 		E2B752542A79491000ACF477 /* ChargingStationIntentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationIntentProtocol.swift; sourceTree = "<group>"; };
 		E2B752562A79522A00ACF477 /* ChargingStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStation.swift; sourceTree = "<group>"; };
 		E2B752592A795E0E00ACF477 /* MainChargingStationView+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainChargingStationView+Build.swift"; sourceTree = "<group>"; };
+		E2B7525C2A7B7D5300ACF477 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E2B7525E2A7B9DCB00ACF477 /* ChargingStationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationType.swift; sourceTree = "<group>"; };
+		E2B752602A8146B900ACF477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModelProtocol.swift; sourceTree = "<group>"; };
 		E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +148,7 @@
 				E21DA5472A49D9E800625565 /* Resources */,
 				E21DA5462A49D9D600625565 /* Sources */,
 				E21DA51C2A49D8A100625565 /* ChabobApp.swift */,
-				E21DA5202A49D8A200625565 /* Assets.xcassets */,
+				E2B752602A8146B900ACF477 /* Assets.xcassets */,
 				E21DA5222A49D8A200625565 /* Preview Content */,
 			);
 			path = Chabob;
@@ -178,8 +182,8 @@
 		E21DA5462A49D9D600625565 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E2B7525B2A7B7D2F00ACF477 /* Utilities */,
 				E2B752582A795DB300ACF477 /* MainChargingStation */,
-				E2B752502A7947FB00ACF477 /* MVIContainer.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -206,8 +210,8 @@
 		E21DA5492A49DA4900625565 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */,
 				E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */,
+				E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */,
 				E2B752562A79522A00ACF477 /* ChargingStation.swift */,
 			);
 			path = Model;
@@ -228,8 +232,18 @@
 				E21DA54A2A49DA5000625565 /* Intent */,
 				E21DA5492A49DA4900625565 /* Model */,
 				E21DA5482A49DA0200625565 /* Views */,
+				E2B7525E2A7B9DCB00ACF477 /* ChargingStationType.swift */,
 			);
 			path = MainChargingStation;
+			sourceTree = "<group>";
+		};
+		E2B7525B2A7B7D2F00ACF477 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2B752502A7947FB00ACF477 /* MVIContainer.swift */,
+				E2B7525C2A7B7D5300ACF477 /* LocationService.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		F3B4C7F8207BEA666E8C5020 /* Pods */ = {
@@ -355,8 +369,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21DA5242A49D8A200625565 /* Preview Assets.xcassets in Resources */,
+				E2B752612A8146B900ACF477 /* Assets.xcassets in Resources */,
 				E21B92D62A67B9CC003BF71E /* API_Key.plist in Resources */,
-				E21DA5212A49D8A200625565 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,9 +505,11 @@
 				E254437E2A71383D006AF892 /* Chabob++Bundle.swift in Sources */,
 				E2B752512A7947FB00ACF477 /* MVIContainer.swift in Sources */,
 				E2B7525A2A795E0E00ACF477 /* MainChargingStationView+Build.swift in Sources */,
+				E2B7525F2A7B9DCB00ACF477 /* ChargingStationType.swift in Sources */,
 				E295BF5D2A67E9EB002791D3 /* MapView.swift in Sources */,
 				E2B752532A79482E00ACF477 /* ChargingStationIntent.swift in Sources */,
 				E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */,
+				E2B7525D2A7B7D5300ACF477 /* LocationService.swift in Sources */,
 				E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,7 +673,8 @@
 				DEVELOPMENT_TEAM = SXSNK823Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로 합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -688,7 +705,8 @@
 				DEVELOPMENT_TEAM = SXSNK823Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로 합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "해당 앱은 위치 정보를 사용하기 위해 사용자의 위치 정보를 필요로 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
