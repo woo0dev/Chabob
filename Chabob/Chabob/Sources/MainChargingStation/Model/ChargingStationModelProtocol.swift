@@ -16,12 +16,6 @@ protocol ChargingStationModelProtocol {
 	func dataFetchError(_ error: Error)
 }
 
-//protocol ChargingStationModelStateProtocol {
-//	func dataFetchLoading()
-//	func dataUpdate(contents: [ChargingStation])
-//	func dataFetchError(_ error: Error)
-//}
-
 enum ChargingStationError: Error {
 	case emptyData
 }

@@ -10,6 +10,8 @@ import CoreLocation
 
 class LocationService: NSObject, CLLocationManagerDelegate {
 	private let manager = CLLocationManager()
+	private var userLat = Double()
+	private var userLng = Double()
 
 	override init() {
 		super.init()
@@ -32,11 +34,22 @@ class LocationService: NSObject, CLLocationManagerDelegate {
 		print(error)
 	}
 	
-	func fetchUserLocation() -> CLLocation {
+	func fetchUserLocation() -> CLLocationCoordinate2D {
 		if let location = manager.location {
-			return location
+			self.userLat = Double(location.coordinate.latitude)
+			self.userLng = Double(location.coordinate.longitude)
+			return location.coordinate
 		} else {
-			return CLLocation(latitude: 37.359600825024025, longitude: 127.1050730428666)
+			return CLLocation(latitude: 37.359600825024025, longitude: 127.1050730428666).coordinate
 		}
+	}
+	
+	func updateUserLocation(_ lat: Double, _ lng: Double) -> Bool {
+		if abs(self.userLat - lat) > 0.005 && abs(self.userLng - lng) > 0.005 {
+			self.userLat = lat
+			self.userLng = lng
+			return true
+		}
+		return false
 	}
 }

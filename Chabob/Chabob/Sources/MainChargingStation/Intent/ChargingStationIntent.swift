@@ -10,8 +10,6 @@ import SwiftUI
 class ChargingStationIntent: ChargingStationIntentProtocol {
 	private var model: ChargingStationModelProtocol?
 	
-	private var chargingStations = [ChargingStation]()
-	
 	init(model: ChargingStationModelProtocol? = nil) {
 		self.model = model
 	}
@@ -21,7 +19,6 @@ class ChargingStationIntent: ChargingStationIntentProtocol {
 		model?.fetchChargingStationData(url: url) { [weak self] result in
 			switch result {
 			case let .success(chargingStations):
-				self?.chargingStations = chargingStations
 				self?.model?.dataUpdate(contents: chargingStations)
 			case let .failure(error):
 				self?.model?.dataFetchError(error)
@@ -31,5 +28,13 @@ class ChargingStationIntent: ChargingStationIntentProtocol {
 	
 	func viewOnDisappear() {
 		print("MainChargingStationViewDisappear")
+	}
+	
+	func updateCameraPosition(_ chargingStations: [ChargingStation], _ maxLat: Double, _ minLat: Double, _ maxLng: Double, _ minLng: Double) {
+		model?.dataUpdate(contents: chargingStations.filter({ station in
+			let lat = Double().toLatitude(station.lat)
+			let lng = Double().toLongitude(station.longi)
+			return (maxLat >= lat && minLat <= lat) && (maxLng >= lng && minLng <= lng)
+		}))
 	}
 }

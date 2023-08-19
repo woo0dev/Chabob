@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import NMapsMap
 
 final class ChargingStationModel: ObservableObject, ChargingStationModelProtocol {
 	@Published var locationManager = LocationService()
@@ -51,7 +52,22 @@ extension ChargingStationModel {
 	}
 	
 	func dataUpdate(contents: [ChargingStation]) {
-		contentState = .content(contents: contents)
+		var markers = [NMFMarker]()
+		
+		contents.forEach { station in
+			let marker = NMFMarker()
+			marker.position = NMGLatLng(lat: Double().toLatitude(station.lat), lng: Double().toLongitude(station.longi))
+			marker.iconImage = NMF_MARKER_IMAGE_BLACK
+			marker.captionMinZoom = 9
+			marker.captionMaxZoom = 16
+			marker.captionRequestedWidth = 100
+			marker.width = 20
+			marker.height = 30
+			marker.isHideCollidedMarkers = true
+			markers.append(marker)
+		}
+		
+		contentState = .content(contents: contents, markers: markers)
 	}
 	
 	func dataFetchError(_ error: Error) {
@@ -62,7 +78,7 @@ extension ChargingStationModel {
 extension ChargingStationType.Model {
 	enum ContentState {
 		case loading
-		case content(contents: [ChargingStation])
+		case content(contents: [ChargingStation], markers: [NMFMarker])
 		case error(text: String)
 	}
 }

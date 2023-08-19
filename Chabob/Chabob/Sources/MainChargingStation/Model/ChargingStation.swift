@@ -12,7 +12,7 @@ struct ChargingStationResponse: Codable {
 	let data: [ChargingStation]
 }
 
-struct ChargingStation: Codable {
+struct ChargingStation: Codable, Hashable {
 	let addr, chargeTp, cpStat, cpTp, csNm, lat, longi, statUpdatetime: String
 	let cpID, csID: Int?
 	let cpNm: ChargerType

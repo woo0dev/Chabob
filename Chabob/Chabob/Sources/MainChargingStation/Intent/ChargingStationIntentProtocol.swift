@@ -10,4 +10,5 @@ import SwiftUI
 protocol ChargingStationIntentProtocol {
 	func viewOnAppear()
 	func viewOnDisappear()
+	func updateCameraPosition(_ chargingStations: [ChargingStation], _ maxLat: Double, _ minLat: Double, _ maxLng: Double, _ minLng: Double)
 }
