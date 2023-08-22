@@ -19,7 +19,7 @@ struct MainChargingStationView: View {
 			case .loading:
 				LoadingView()
 			case let .content(contents: chargingStations, markers: _):
-				UIMapView(container: container, chargingStation: chargingStations)
+				UIMapView(container: container, chargingStations: chargingStations)
 			case let .error(text: text):
 				ErrorView(text: text)
 			}
@@ -29,4 +29,3 @@ struct MainChargingStationView: View {
 		.onDisappear(perform: intent.viewOnDisappear)
     }
 }
-

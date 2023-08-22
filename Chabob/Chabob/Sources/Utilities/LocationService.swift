@@ -12,6 +12,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
 	private let manager = CLLocationManager()
 	private var userLat = Double()
 	private var userLng = Double()
+	private var zoomLevel = Double()
 
 	override init() {
 		super.init()
@@ -44,8 +45,8 @@ class LocationService: NSObject, CLLocationManagerDelegate {
 		}
 	}
 	
-	func updateUserLocation(_ lat: Double, _ lng: Double) -> Bool {
-		if abs(self.userLat - lat) > 0.005 && abs(self.userLng - lng) > 0.005 {
+	func updateUserLocation(_ lat: Double, _ lng: Double, _ nextZoomLevel: Double) -> Bool {
+		if abs(self.userLat - lat) > 0.005 && abs(self.userLng - lng) > 0.005 || abs(self.zoomLevel - nextZoomLevel) > 0.5 {
 			self.userLat = lat
 			self.userLng = lng
 			return true
