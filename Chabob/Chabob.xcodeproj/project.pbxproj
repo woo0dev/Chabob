@@ -29,6 +29,7 @@
 		E2B752612A8146B900ACF477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B752602A8146B900ACF477 /* Assets.xcassets */; };
 		E2B752662A88D65F00ACF477 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B752652A88D65F00ACF477 /* Double+.swift */; };
 		E2BF69772A952879007B1C10 /* UIMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF69762A952879007B1C10 /* UIMapViewController.swift */; };
+		E2BF697E2A9672CD007B1C10 /* RoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF697D2A9672CD007B1C10 /* RoundedUIButton.swift */; };
 		E2C74C242A72A7680043E8EC /* ChargingStationModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */; };
 		E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */; };
 		E2FDB67E2A8E8307008E3F07 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */; };
@@ -84,6 +85,7 @@
 		E2B752602A8146B900ACF477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B752652A88D65F00ACF477 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		E2BF69762A952879007B1C10 /* UIMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapViewController.swift; sourceTree = "<group>"; };
+		E2BF697D2A9672CD007B1C10 /* RoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIButton.swift; sourceTree = "<group>"; };
 		E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModelProtocol.swift; sourceTree = "<group>"; };
 		E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModel.swift; sourceTree = "<group>"; };
 		E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -252,8 +254,9 @@
 		E2B7525B2A7B7D2F00ACF477 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				E2B752502A7947FB00ACF477 /* MVIContainer.swift */,
-				E2B7525C2A7B7D5300ACF477 /* LocationService.swift */,
+				E2BF697C2A9671FB007B1C10 /* Views */,
+				E2BF697B2A9671E9007B1C10 /* Classes */,
+				E2BF697A2A9671C7007B1C10 /* Contatiners */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -272,6 +275,30 @@
 				E2BF69762A952879007B1C10 /* UIMapViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2BF697A2A9671C7007B1C10 /* Contatiners */ = {
+			isa = PBXGroup;
+			children = (
+				E2B752502A7947FB00ACF477 /* MVIContainer.swift */,
+			);
+			path = Contatiners;
+			sourceTree = "<group>";
+		};
+		E2BF697B2A9671E9007B1C10 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2B7525C2A7B7D5300ACF477 /* LocationService.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E2BF697C2A9671FB007B1C10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF697D2A9672CD007B1C10 /* RoundedUIButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F3B4C7F8207BEA666E8C5020 /* Pods */ = {
@@ -543,6 +570,7 @@
 				E2B7525D2A7B7D5300ACF477 /* LocationService.swift in Sources */,
 				E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */,
 				E2FDB6802A8E832C008E3F07 /* ErrorView.swift in Sources */,
+				E2BF697E2A9672CD007B1C10 /* RoundedUIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

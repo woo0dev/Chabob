@@ -17,6 +17,8 @@ class UIMapViewController: UIViewController {
 	
 	let mapView = NMFNaverMapView()
 	
+	private lazy var profileButton = RoundedUIButton()
+	
 	init(container: MVIContainer<ChargingStationIntentProtocol, ChargingStationModelProtocol>, chargingStations: [ChargingStation]) {
 		self.container = container
 		self.chargingStations = chargingStations
@@ -30,6 +32,7 @@ class UIMapViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupMapView()
+		setupSubViews()
 		updateMapMarkers()
 	}
 	
@@ -54,6 +57,17 @@ class UIMapViewController: UIViewController {
 		])
 	}
 	
+	func setupSubViews() {
+		view.addSubview(profileButton)
+		profileButton.setupView("person.fill")
+		profileButton.addTarget(self, action: #selector(tappedProfileButton), for: .touchUpInside)
+		profileButton.translatesAutoresizingMaskIntoConstraints = false
+		NSLayoutConstraint.activate([
+			self.profileButton.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
+			self.profileButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5)
+		])
+	}
+	
 	func updateMapMarkers() {
 		switch self.container.model.contentState {
 		case let .content(contents: chargingStations, markers: markers):
@@ -67,6 +81,10 @@ class UIMapViewController: UIViewController {
 		default:
 			break
 		}
+	}
+	
+	@objc func tappedProfileButton() {
+		// TODO: 마이페이지 뷰 호출 구현
 	}
 }
 
