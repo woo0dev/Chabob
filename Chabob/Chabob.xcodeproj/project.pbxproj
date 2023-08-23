@@ -30,6 +30,7 @@
 		E2B752662A88D65F00ACF477 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B752652A88D65F00ACF477 /* Double+.swift */; };
 		E2BF69772A952879007B1C10 /* UIMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF69762A952879007B1C10 /* UIMapViewController.swift */; };
 		E2BF697E2A9672CD007B1C10 /* RoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF697D2A9672CD007B1C10 /* RoundedUIButton.swift */; };
+		E2BF69802A96767A007B1C10 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF697F2A96767A007B1C10 /* UIColor+.swift */; };
 		E2C74C242A72A7680043E8EC /* ChargingStationModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */; };
 		E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */; };
 		E2FDB67E2A8E8307008E3F07 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */; };
@@ -86,6 +87,7 @@
 		E2B752652A88D65F00ACF477 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		E2BF69762A952879007B1C10 /* UIMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapViewController.swift; sourceTree = "<group>"; };
 		E2BF697D2A9672CD007B1C10 /* RoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIButton.swift; sourceTree = "<group>"; };
+		E2BF697F2A96767A007B1C10 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModelProtocol.swift; sourceTree = "<group>"; };
 		E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModel.swift; sourceTree = "<group>"; };
 		E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				E2B752652A88D65F00ACF477 /* Double+.swift */,
+				E2BF697F2A96767A007B1C10 /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				E295BF5D2A67E9EB002791D3 /* UIMapView.swift in Sources */,
 				E2B752532A79482E00ACF477 /* ChargingStationIntent.swift in Sources */,
 				E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */,
+				E2BF69802A96767A007B1C10 /* UIColor+.swift in Sources */,
 				E2B7525D2A7B7D5300ACF477 /* LocationService.swift in Sources */,
 				E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */,
 				E2FDB6802A8E832C008E3F07 /* ErrorView.swift in Sources */,

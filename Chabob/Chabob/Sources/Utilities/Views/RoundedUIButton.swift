@@ -25,7 +25,7 @@ final class RoundedUIButton: UIButton {
 		buttonConfig.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
 		buttonConfig.background.cornerRadius = 10
 		buttonConfig.baseForegroundColor = .white
-		buttonConfig.background.backgroundColor = UIColor(named: "FirstColor")
+		buttonConfig.background.backgroundColor = UIColor.firstColor
 		self.configuration = buttonConfig
 		self.layer.shadowColor = UIColor.black.cgColor
 		self.layer.shadowOffset = CGSize(width: 0, height: 4)
