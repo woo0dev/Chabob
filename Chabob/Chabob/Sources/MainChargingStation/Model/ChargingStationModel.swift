@@ -57,7 +57,7 @@ extension ChargingStationModel {
 		contents.forEach { station in
 			let marker = NMFMarker()
 			marker.position = NMGLatLng(lat: Double().toLatitude(station.lat), lng: Double().toLongitude(station.longi))
-			marker.iconImage = NMF_MARKER_IMAGE_BLACK
+			marker.iconImage = NMFOverlayImage(name: "Marker")
 			marker.captionMinZoom = 9
 			marker.captionMaxZoom = 16
 			marker.captionRequestedWidth = 100
