@@ -49,6 +49,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
 		if abs(self.userLat - lat) > 0.005 && abs(self.userLng - lng) > 0.005 || abs(self.zoomLevel - nextZoomLevel) > 0.5 {
 			self.userLat = lat
 			self.userLng = lng
+			self.zoomLevel = nextZoomLevel
 			return true
 		}
 		return false
