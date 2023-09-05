@@ -12,12 +12,12 @@ import NMapsMap
 struct ChabobApp: App {
 	
 	init() {
-		NMFAuthManager.shared().clientId = Bundle.main.apiKey
+		NMFAuthManager.shared().clientId = Bundle.main.naverMapClientID
 	}
 	
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			MainChargingStationView.build()
         }
     }
 }
