@@ -17,6 +17,8 @@
 		E21DA52E2A49D8A200625565 /* ChabobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA52D2A49D8A200625565 /* ChabobTests.swift */; };
 		E21DA5382A49D8A200625565 /* ChabobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5372A49D8A200625565 /* ChabobUITests.swift */; };
 		E21DA53A2A49D8A200625565 /* ChabobUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5392A49D8A200625565 /* ChabobUITestsLaunchTests.swift */; };
+		E24E8A3C2B31817A00F072DF /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E8A3B2B31817A00F072DF /* SearchBarView.swift */; };
+		E24E8A3E2B31876500F072DF /* SearchUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E8A3D2B31876500F072DF /* SearchUIButton.swift */; };
 		E254437E2A71383D006AF892 /* Chabob++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254437D2A71383D006AF892 /* Chabob++Bundle.swift */; };
 		E295BF5D2A67E9EB002791D3 /* UIMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295BF5C2A67E9EB002791D3 /* UIMapView.swift */; };
 		E2B752512A7947FB00ACF477 /* MVIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B752502A7947FB00ACF477 /* MVIContainer.swift */; };
@@ -74,6 +76,8 @@
 		E21DA5332A49D8A200625565 /* ChabobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChabobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA5372A49D8A200625565 /* ChabobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobUITests.swift; sourceTree = "<group>"; };
 		E21DA5392A49D8A200625565 /* ChabobUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E24E8A3B2B31817A00F072DF /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		E24E8A3D2B31876500F072DF /* SearchUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIButton.swift; sourceTree = "<group>"; };
 		E254437D2A71383D006AF892 /* Chabob++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chabob++Bundle.swift"; sourceTree = "<group>"; };
 		E295BF5C2A67E9EB002791D3 /* UIMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapView.swift; sourceTree = "<group>"; };
 		E2B752502A7947FB00ACF477 /* MVIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIContainer.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				E2B752592A795E0E00ACF477 /* MainChargingStationView+Build.swift */,
 				E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */,
 				E2FDB67F2A8E832C008E3F07 /* ErrorView.swift */,
+				E24E8A3B2B31817A00F072DF /* SearchBarView.swift */,
+				E24E8A3D2B31876500F072DF /* SearchUIButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -556,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24E8A3C2B31817A00F072DF /* SearchBarView.swift in Sources */,
 				E21DA51F2A49D8A100625565 /* MainChargingStationView.swift in Sources */,
 				E2BF69772A952879007B1C10 /* UIMapViewController.swift in Sources */,
 				E2B752572A79522A00ACF477 /* ChargingStation.swift in Sources */,
@@ -571,6 +578,7 @@
 				E2B752532A79482E00ACF477 /* ChargingStationIntent.swift in Sources */,
 				E21DA51D2A49D8A100625565 /* ChabobApp.swift in Sources */,
 				E2BF69802A96767A007B1C10 /* UIColor+.swift in Sources */,
+				E24E8A3E2B31876500F072DF /* SearchUIButton.swift in Sources */,
 				E2B7525D2A7B7D5300ACF477 /* LocationService.swift in Sources */,
 				E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */,
 				E2FDB6802A8E832C008E3F07 /* ErrorView.swift in Sources */,

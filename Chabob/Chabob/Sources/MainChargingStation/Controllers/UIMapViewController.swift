@@ -12,12 +12,13 @@ class UIMapViewController: UIViewController {
 	var container: MVIContainer<ChargingStationIntentProtocol, ChargingStationModelProtocol>
 	var chargingStations: [ChargingStation]
 	
+	let mapView = NMFNaverMapView()
+	
 	private var intent: ChargingStationIntentProtocol { container.intent }
 	private var model: ChargingStationModelProtocol { container.model }
 	
-	let mapView = NMFNaverMapView()
-	
 	private lazy var profileButton = RoundedUIButton()
+	private lazy var searchUIButton = SearchUIButton()
 	
 	init(container: MVIContainer<ChargingStationIntentProtocol, ChargingStationModelProtocol>, chargingStations: [ChargingStation]) {
 		self.container = container
@@ -58,13 +59,25 @@ class UIMapViewController: UIViewController {
 	}
 	
 	func setupSubViews() {
-		view.addSubview(profileButton)
+		[profileButton, searchUIButton].forEach { view.addSubview($0) }
+		
 		profileButton.setupView("person.fill")
 		profileButton.addTarget(self, action: #selector(tappedProfileButton), for: .touchUpInside)
 		profileButton.translatesAutoresizingMaskIntoConstraints = false
 		NSLayoutConstraint.activate([
 			self.profileButton.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
-			self.profileButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5)
+			self.profileButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5),
+			self.profileButton.widthAnchor.constraint(equalTo: self.profileButton.heightAnchor)
+		])
+		
+		searchUIButton.setupView()
+		searchUIButton.addTarget(self, action: #selector(tappedSearchButton), for: .touchUpInside)
+		searchUIButton.translatesAutoresizingMaskIntoConstraints = false
+		NSLayoutConstraint.activate([
+			self.searchUIButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
+			self.searchUIButton.trailingAnchor.constraint(equalTo: self.profileButton.leadingAnchor, constant: -10),
+			self.searchUIButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5),
+			self.searchUIButton.bottomAnchor.constraint(equalTo: self.profileButton.bottomAnchor)
 		])
 	}
 	
@@ -85,6 +98,10 @@ class UIMapViewController: UIViewController {
 	
 	@objc func tappedProfileButton() {
 		// TODO: 마이페이지 뷰 호출 구현
+	}
+	
+	@objc func tappedSearchButton() {
+		// TODO: 검색 화면 뷰 호출 구현
 	}
 }
 
