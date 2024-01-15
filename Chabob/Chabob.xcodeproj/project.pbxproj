@@ -17,7 +17,7 @@
 		E21DA52E2A49D8A200625565 /* ChabobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA52D2A49D8A200625565 /* ChabobTests.swift */; };
 		E21DA5382A49D8A200625565 /* ChabobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5372A49D8A200625565 /* ChabobUITests.swift */; };
 		E21DA53A2A49D8A200625565 /* ChabobUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DA5392A49D8A200625565 /* ChabobUITestsLaunchTests.swift */; };
-		E24E8A3C2B31817A00F072DF /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E8A3B2B31817A00F072DF /* SearchBarView.swift */; };
+		E24E8A3C2B31817A00F072DF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E8A3B2B31817A00F072DF /* SearchView.swift */; };
 		E24E8A3E2B31876500F072DF /* SearchUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24E8A3D2B31876500F072DF /* SearchUIButton.swift */; };
 		E254437E2A71383D006AF892 /* Chabob++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254437D2A71383D006AF892 /* Chabob++Bundle.swift */; };
 		E295BF5D2A67E9EB002791D3 /* UIMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295BF5C2A67E9EB002791D3 /* UIMapView.swift */; };
@@ -37,6 +37,10 @@
 		E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */; };
 		E2FDB67E2A8E8307008E3F07 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */; };
 		E2FDB6802A8E832C008E3F07 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB67F2A8E832C008E3F07 /* ErrorView.swift */; };
+		E2FE936F2B51240300F4F3E4 /* StationSearchIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE936E2B51240300F4F3E4 /* StationSearchIntent.swift */; };
+		E2FE93712B51242600F4F3E4 /* StationSearchIntentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE93702B51242600F4F3E4 /* StationSearchIntentProtocol.swift */; };
+		E2FE93732B5124B200F4F3E4 /* StationSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE93722B5124B200F4F3E4 /* StationSearchModel.swift */; };
+		E2FE93752B5124BD00F4F3E4 /* StationSearchModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE93742B5124BD00F4F3E4 /* StationSearchModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +80,7 @@
 		E21DA5332A49D8A200625565 /* ChabobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChabobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21DA5372A49D8A200625565 /* ChabobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobUITests.swift; sourceTree = "<group>"; };
 		E21DA5392A49D8A200625565 /* ChabobUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChabobUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E24E8A3B2B31817A00F072DF /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		E24E8A3B2B31817A00F072DF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E24E8A3D2B31876500F072DF /* SearchUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUIButton.swift; sourceTree = "<group>"; };
 		E254437D2A71383D006AF892 /* Chabob++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chabob++Bundle.swift"; sourceTree = "<group>"; };
 		E295BF5C2A67E9EB002791D3 /* UIMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,10 @@
 		E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationModel.swift; sourceTree = "<group>"; };
 		E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E2FDB67F2A8E832C008E3F07 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E2FE936E2B51240300F4F3E4 /* StationSearchIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchIntent.swift; sourceTree = "<group>"; };
+		E2FE93702B51242600F4F3E4 /* StationSearchIntentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchIntentProtocol.swift; sourceTree = "<group>"; };
+		E2FE93722B5124B200F4F3E4 /* StationSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchModel.swift; sourceTree = "<group>"; };
+		E2FE93742B5124BD00F4F3E4 /* StationSearchModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,9 +229,9 @@
 				E295BF5C2A67E9EB002791D3 /* UIMapView.swift */,
 				E2B752592A795E0E00ACF477 /* MainChargingStationView+Build.swift */,
 				E2FDB67D2A8E8307008E3F07 /* LoadingView.swift */,
-				E2FDB67F2A8E832C008E3F07 /* ErrorView.swift */,
-				E24E8A3B2B31817A00F072DF /* SearchBarView.swift */,
+				E24E8A3B2B31817A00F072DF /* SearchView.swift */,
 				E24E8A3D2B31876500F072DF /* SearchUIButton.swift */,
+				E2FDB67F2A8E832C008E3F07 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +242,8 @@
 				E2C74C252A72A80D0043E8EC /* ChargingStationModel.swift */,
 				E2C74C232A72A7680043E8EC /* ChargingStationModelProtocol.swift */,
 				E2B752562A79522A00ACF477 /* ChargingStation.swift */,
+				E2FE93722B5124B200F4F3E4 /* StationSearchModel.swift */,
+				E2FE93742B5124BD00F4F3E4 /* StationSearchModelProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +253,8 @@
 			children = (
 				E2B752522A79482E00ACF477 /* ChargingStationIntent.swift */,
 				E2B752542A79491000ACF477 /* ChargingStationIntentProtocol.swift */,
+				E2FE936E2B51240300F4F3E4 /* StationSearchIntent.swift */,
+				E2FE93702B51242600F4F3E4 /* StationSearchIntentProtocol.swift */,
 			);
 			path = Intent;
 			sourceTree = "<group>";
@@ -562,12 +574,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E24E8A3C2B31817A00F072DF /* SearchBarView.swift in Sources */,
+				E24E8A3C2B31817A00F072DF /* SearchView.swift in Sources */,
 				E21DA51F2A49D8A100625565 /* MainChargingStationView.swift in Sources */,
 				E2BF69772A952879007B1C10 /* UIMapViewController.swift in Sources */,
+				E2FE93712B51242600F4F3E4 /* StationSearchIntentProtocol.swift in Sources */,
 				E2B752572A79522A00ACF477 /* ChargingStation.swift in Sources */,
 				E2B752552A79491000ACF477 /* ChargingStationIntentProtocol.swift in Sources */,
 				E2C74C242A72A7680043E8EC /* ChargingStationModelProtocol.swift in Sources */,
+				E2FE936F2B51240300F4F3E4 /* StationSearchIntent.swift in Sources */,
 				E254437E2A71383D006AF892 /* Chabob++Bundle.swift in Sources */,
 				E2B752512A7947FB00ACF477 /* MVIContainer.swift in Sources */,
 				E2B7525A2A795E0E00ACF477 /* MainChargingStationView+Build.swift in Sources */,
@@ -580,7 +594,9 @@
 				E2BF69802A96767A007B1C10 /* UIColor+.swift in Sources */,
 				E24E8A3E2B31876500F072DF /* SearchUIButton.swift in Sources */,
 				E2B7525D2A7B7D5300ACF477 /* LocationService.swift in Sources */,
+				E2FE93732B5124B200F4F3E4 /* StationSearchModel.swift in Sources */,
 				E2C74C262A72A80D0043E8EC /* ChargingStationModel.swift in Sources */,
+				E2FE93752B5124BD00F4F3E4 /* StationSearchModelProtocol.swift in Sources */,
 				E2FDB6802A8E832C008E3F07 /* ErrorView.swift in Sources */,
 				E2BF697E2A9672CD007B1C10 /* RoundedUIButton.swift in Sources */,
 			);
@@ -752,6 +768,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -785,6 +802,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

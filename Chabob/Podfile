@@ -16,6 +16,6 @@ target 'Chabob' do
     # Pods for testing
   end
 
-  pod 'NMapsMap'
+  pod 'NMapsMap','3.16.0'
 
 end

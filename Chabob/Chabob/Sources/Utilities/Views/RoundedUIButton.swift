@@ -18,12 +18,12 @@ final class RoundedUIButton: UIButton {
 	
 	func setupView(_ imageName: String) {
 		var buttonConfig = UIButton.Configuration.filled()
-		let imageConfig = UIImage.SymbolConfiguration(pointSize: 25, weight: .light)
+		let imageConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .light)
 		let image = UIImage(systemName: imageName, withConfiguration: imageConfig)
 		buttonConfig.image = image
 		buttonConfig.imagePlacement = .top
 		buttonConfig.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
-		buttonConfig.background.cornerRadius = 10
+		buttonConfig.cornerStyle = .large
 		buttonConfig.baseForegroundColor = .white
 		buttonConfig.background.backgroundColor = UIColor.firstColor
 		self.configuration = buttonConfig

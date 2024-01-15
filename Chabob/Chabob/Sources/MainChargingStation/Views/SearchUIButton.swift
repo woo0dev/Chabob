@@ -20,8 +20,7 @@ final class SearchUIButton: UIButton {
 		var buttonConfig = UIButton.Configuration.filled()
 		buttonConfig.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
 		buttonConfig.title = "충전소 검색"
-		buttonConfig.titleAlignment = .leading
-		buttonConfig.background.cornerRadius = 10
+		buttonConfig.cornerStyle = .large
 		buttonConfig.baseForegroundColor = .lightGray
 		buttonConfig.baseBackgroundColor = .white
 		self.configuration = buttonConfig

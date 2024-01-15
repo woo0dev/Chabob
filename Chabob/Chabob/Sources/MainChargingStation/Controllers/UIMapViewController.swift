@@ -7,6 +7,7 @@
 
 import UIKit
 import NMapsMap
+import SwiftUI
 
 class UIMapViewController: UIViewController {
 	var container: MVIContainer<ChargingStationIntentProtocol, ChargingStationModelProtocol>
@@ -101,7 +102,9 @@ class UIMapViewController: UIViewController {
 	}
 	
 	@objc func tappedSearchButton() {
-		// TODO: 검색 화면 뷰 호출 구현
+		let hostingVC = UIHostingController(rootView: SearchView.build(chargingStations: chargingStations, userLocation: model.locationManager.fetchUserLocation()))
+		hostingVC.modalPresentationStyle = .fullScreen
+		self.present(hostingVC, animated: true)
 	}
 }
 

@@ -10,6 +10,7 @@ import Combine
 import NMapsMap
 
 final class ChargingStationModel: ObservableObject, ChargingStationModelProtocol {
+	// TODO: locationManager 대신 userLocation을 가지고 있도록 수정
 	@Published var locationManager = LocationService()
 	@Published var contentState: ChargingStationType.Model.ContentState = .loading
 	
@@ -29,7 +30,11 @@ final class ChargingStationModel: ObservableObject, ChargingStationModelProtocol
 				DispatchQueue.main.async {
 					do {
 						let decodeResponse = try JSONDecoder().decode(ChargingStationResponse.self, from: data)
-						chargingStations = decodeResponse.data
+						chargingStations = decodeResponse.data.enumerated().map {
+							var station = $0
+							station.element.id = $0.offset
+							return station.element
+						}
 					} catch let error {
 						print("Error: Decoding: ", error)
 					}

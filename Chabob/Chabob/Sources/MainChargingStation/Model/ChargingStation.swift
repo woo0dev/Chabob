@@ -12,10 +12,11 @@ struct ChargingStationResponse: Codable {
 	let data: [ChargingStation]
 }
 
-struct ChargingStation: Codable, Hashable {
+struct ChargingStation: Codable, Hashable, Identifiable {
 	let addr, chargeTp, cpStat, cpTp, csNm, lat, longi, statUpdatetime: String
 	let cpID, csID: Int?
 	let cpNm: ChargerType
+	var id: Int?
 }
 
 enum ChargerType: String, Codable {
